@@ -1,0 +1,16 @@
+spring.mvc.pathmatch.matching-strategy: ant-path-matcher
+
+server:
+  port: 8080
+  servlet:
+    context-path: /sms
+
+spring:
+  application:
+    name: stock-market-simulator
+
+order-books: GOOG, AAPL, NVDA
+
+scheduler:
+  fixed-delay-milliseconds: 1000
+  initial-delay-milliseconds: 1000
