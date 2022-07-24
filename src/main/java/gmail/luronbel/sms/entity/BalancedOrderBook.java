@@ -2,7 +2,7 @@ package gmail.luronbel.sms.entity;
 
 import gmail.luronbel.sms.dto.OrderRequest;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Contains all orders (buy and sell) for a certain stock. Stocks are identified by unique codes called symbols.
@@ -18,7 +18,7 @@ public interface BalancedOrderBook extends Balanced {
 
     void cancelOrder(long orderId);
 
-    List<Order> getBuyOrders();
+    Collection<Order> getBuyOrders();
 
-    List<Order> getSellOrders();
+    Collection<Order> getSellOrders();
 }
